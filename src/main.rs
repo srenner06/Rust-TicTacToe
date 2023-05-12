@@ -41,13 +41,6 @@ impl Game{
         print!("1|{}|{}|{}|\n", player_to_str(self.board[0][0]), player_to_str(self.board[0][1]), player_to_str(self.board[0][2]));
         print!("2|{}|{}|{}|\n", player_to_str(self.board[1][0]), player_to_str(self.board[1][1]), player_to_str(self.board[1][2]));
         print!("3|{}|{}|{}|\n", player_to_str(self.board[2][0]), player_to_str(self.board[2][1]), player_to_str(self.board[2][2]));
-
-        // for row in &self.board {
-        //     for &cell in row{
-        //         print!("{}", player_to_str(cell));
-        //     }
-        //     println!();
-        // }
     }
 
     fn make_move(&mut self, row: usize, col: usize) -> bool{
